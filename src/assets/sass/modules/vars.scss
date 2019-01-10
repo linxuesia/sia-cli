@@ -1,0 +1,19 @@
+@mixin round-btn($width,$height,$color:#fff){
+    width: $width;
+    height: $height;
+    border-radius: $height/2;
+    line-height: $height;
+    background-color: $color;
+    border: none;
+    text-align: center;
+}
+@mixin img-wrap ($size){
+    width: $size;
+    height: $size;
+    border-radius: $size;
+    overflow: hidden;
+    &>img{
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,59 @@
+/* flex line */
+.flex-line{
+    display: flex;
+    &.col{
+        flex-direction: column;
+    }
+    &.split{
+        justify-content: space-between;
+    }
+    .flex-center{
+        justify-content: center;
+        align-items: center;
+    }
+}
+.mb-10 {
+    margin-bottom: 0.2rem;
+}
+
+.mb-20 {
+    margin-bottom: 0.4rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+/*清除浮动*/
+.clear {
+    clear: both;
+}
+/*单行省略号*/
+.ellipsis_one {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/*超过2行省略号*/
+.ellipsis_two {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+/*超过3行省略号*/
+.ellipsis_three {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}

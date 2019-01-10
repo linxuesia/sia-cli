@@ -1,0 +1,14 @@
+@import 'modules/reset';
+@import 'modules/color';
+@import 'modules/font';
+@import 'modules/box';
+
+html{
+    font-size: 13.34vw;
+}
+body{
+    font-size: .28rem;
+}
+[v-cloak]{
+    display: none;
+}

@@ -9,6 +9,10 @@ Vue.config.productionTip = false
 import './assets/font/iconfont.css'
 import './assets/sass/common.scss'
 
+// 挂载全局request
+import http from '@/utils/Request'
+Vue.prototype.$ajax = http
+
 
 new Vue({
   router,

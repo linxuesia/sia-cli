@@ -1,6 +1,5 @@
 /**
  * 黑色逐渐消失的文字提示层
- *
  */
 <template lang="html">
     <transition name="toast">
@@ -18,18 +17,6 @@ export default {
             text: '',
             show: false
         }
-    },
-    computed:{
-
-    },
-    props:{
-
-    },
-    methods:{
-
-    },
-    mounted(){
-
     }
 }
 </script>

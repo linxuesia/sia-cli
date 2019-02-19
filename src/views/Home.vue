@@ -1,6 +1,6 @@
 <template lang="html">
     <div>
-        <h1>Home</h1>
+        <h1></h1>
     </div>
 </template>
 
@@ -22,7 +22,7 @@ export default {
 
     },
     mounted(){
-        this.$toast('tetxsbxjskdnsjdnxjsd')
+        
     }
 }
 </script>

@@ -13,10 +13,11 @@ import './assets/sass/common.scss'
 import http from '@/utils/Request'
 Vue.prototype.$ajax = http
 
-// 导入全局Toast
+// 导入全局Toast loading 组件
 import Toast from '@components/common/Toast/index'
-console.log(Toast);
+import Loading from '@components/common/Loading/index'
 Vue.use(Toast)
+Vue.use(Loading)
 
 new Vue({
   router,

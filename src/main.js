@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
+import store from './store/index'
 
 Vue.config.productionTip = false
 
@@ -13,6 +13,11 @@ import './assets/sass/common.scss'
 import http from '@/utils/Request'
 Vue.prototype.$ajax = http
 
+// 导入全局Toast loading 组件
+import Toast from '@components/common/Toast/index'
+import Loading from '@components/common/Loading/index'
+Vue.use(Toast)
+Vue.use(Loading)
 
 new Vue({
   router,

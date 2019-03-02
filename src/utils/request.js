@@ -1,7 +1,7 @@
 import axios from 'axios'
 import qs from 'qs'
 import Vue from 'vue'
-import store from '../store/index.js'
+import store from '../store.js'
 import Routers from '../router.js'
 /**
  * 创建axios实例

@@ -1,3 +1,7 @@
+// 主题色
+$color-primary: #1ABC9C;
+
+// 椭圆形按钮
 @mixin round-btn($width,$height,$color:#fff){
     width: $width;
     height: $height;
@@ -7,6 +11,7 @@
     border: none;
     text-align: center;
 }
+// 圆形图片的容器
 @mixin img-wrap ($size){
     width: $size;
     height: $size;
@@ -17,8 +22,21 @@
         height: auto;
     }
 }
+// 居中对齐
 @mixin flex-center{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+// 单行固定位置对齐
+@mixin text-justify{
+    text-align: justify;
+    text-align-last: justify;
+    &::after{
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
 }

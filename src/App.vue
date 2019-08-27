@@ -1,10 +1,20 @@
 <template>
   <div id="app">
-    <router-view/>
+      <!-- 需要缓存的页面 -->
+      <keep-alive>
+          <router-view v-if="$route.meta.keepAlive"></router-view>
+      </keep-alive>
+
+      <!-- 不需要缓存的页面 -->
+      <router-view v-if="!$route.meta.keepAlive"></router-view>
   </div>
 </template>
 
-<style>
+<script>
+
+</script>
+
+<style style="scss">
 #app {
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
     -webkit-font-smoothing: antialiased;

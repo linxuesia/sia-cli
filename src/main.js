@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
+import router from './router/index'
 import store from './store/index'
 
 Vue.config.productionTip = false
@@ -10,14 +10,12 @@ Vue.config.productionTip = false
 import './assets/sass/common.scss'
 
 // 挂载全局request
-import http from '@/utils/Request'
+import http from '@/utils/request'
 Vue.prototype.$ajax = http
 
-// 导入全局Toast loading 组件
-import Toast from '@components/common/Toast/index'
-import Loading from '@components/common/Loading/index'
-Vue.use(Toast)
-Vue.use(Loading)
+// 导入全局组件
+require('./components/global/index')
+
 
 new Vue({
   router,

@@ -9,7 +9,9 @@
      },
 
      mutations: {
-
+         changeState(state, playload){
+             state[playload.name] = playload.value
+         }
      }
  }
 

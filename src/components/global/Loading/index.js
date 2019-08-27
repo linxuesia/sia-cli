@@ -15,12 +15,12 @@ const Loading = {}
      document.body.appendChild(tpl.$el)
 
      // 定义 loading 方法
-     Vue.prototype.$showloading = (txt, options) => {
+     Vue.prototype.$showloading = () => {
         tpl.show = true
      }
 
      // 定义关闭 loading 方法
-     Vue.prototype.$hideloading = (txt, options) => {
+     Vue.prototype.$hideloading = () => {
         tpl.show = false
      }
 

@@ -29,7 +29,6 @@ const Toast = {}
         tpl.text = txt
         tpl.show = true
         document.body.appendChild(tpl.$el)
-        console.log(tpl)
         // document.body.append(tpl)
         setTimeout(()=>{
             // document.body.removeChild(tpl.$el)

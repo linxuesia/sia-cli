@@ -12,6 +12,7 @@ module.exports = {
             .set('@components', resolve('src/components'))
             .set('@static', resolve('src/static'))
             .set('@plugins', resolve('src/plugins'))
+            .set('@mixins', resolve('src/mixins'))
         config.plugins.delete('prefetch')
         config.module
           .rule('images')
@@ -23,6 +24,7 @@ module.exports = {
          //        .set('filename','js/[name].js')
          //        .set('publicPath','/')
          //        .set('chunkFilename','js/[name].js')
+         config.output.filename('[name].[hash].js').end()
     },
     css: {
       loaderOptions: {
@@ -34,7 +36,7 @@ module.exports = {
         }
       }
   },
-  // filenameHashing: false,  // 文件名加hash 不包括js和img
+  filenameHashing: false,  // 文件名加hash 不包括js和img
     devServer: {
         host: '127.0.0.1',
         port: 8080,

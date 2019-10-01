@@ -26,7 +26,7 @@ $circleWidth: .1rem;
 $circleColor: rgba(255,255,255,.8);
 $circleSpeed: .6s;
 .loading-wrap{
-    @include flex-center
+    @include flex-center;
     width: 1rem;
     height: 1rem;
     box-sizing: border-box;

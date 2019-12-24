@@ -8,7 +8,7 @@ import Routers from '../router/index.js'
  * @type {[type]}
  */
 const http = axios.create({
-    baseURL: '',
+    baseURL: '/api/',
     withCredentials: true,
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8'
@@ -40,10 +40,10 @@ http.interceptors.request.use(config => {
 
     config.data = qs.stringify({ ...config.data
     })
-    config.params = {
-        ...config.params,
-        isjoin: 0
-    }
+    // config.params = {
+    //     ...config.params,
+    //     isjoin: 0
+    // }
     config.headers['Content-Type'] = 'application/x-www-form-urlencoded'
     return config
 }, error => {    //请求错误处理

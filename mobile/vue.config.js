@@ -38,18 +38,20 @@ module.exports = {
   },
   filenameHashing: false,  // 文件名加hash 不包括js和img
     devServer: {
-        host: '127.0.0.1',
-        port: 8080,
-        https: false,
-        hotOnly: false,
-        // proxy: {   // 设置代理
-        //     '/api': {
-        //         target: 'http://csapi.bbg.com.cn/api/',
-        //         ws: true,
-        //         changeOrigin: true
-        //     },
-        // },
-        proxy: null,
+        // host: '0.0.0.0',
+        // port: 8080,
+        // https: false,
+        // hotOnly: false,
+        proxy: {   // 设置代理
+            '/api': {
+                target: 'http://csapi.bbg.com.cn/allot/bubugao-store-terminal/app/auth/allocation',
+                ws: true,
+                changeOrigin: true,
+                pathRewrite: {
+                    '^/api': ''
+                }
+            },
+        },
         before: app => {}
 
     }

@@ -1,7 +1,9 @@
 <template>
   <d2-container>
-    <template slot="header">Page 1 header</template>
-    Hello World
+    <template slot="header">
+        表单
+    </template>
+    <template slot=""></template>
   </d2-container>
 </template>
 
